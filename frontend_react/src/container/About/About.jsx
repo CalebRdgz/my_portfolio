@@ -1,20 +1,61 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion';
 
+import { images } from '../../constants'
 import './About.scss';
+
+const abouts = [
+  {
+    title: "Web Development",
+    description: "I am a good web developer.",
+    imgUrl: images.about01
+  },
+  {
+    title: "Frontend Development",
+    description: "I am a good web developer.",
+    imgUrl: images.about01
+  },
+  {
+    title: "Backend Development",
+    description: "I am a good web developer.",
+    imgUrl: images.about02
+  },
+  {
+    title: "MERN Stack",
+    description: "I am a good web developer.",
+    imgUrl: images.about03
+  },
+];
+
 const About = () => {
   return (
     <>
-    <h2 className='head-text'>
-      I Know That
-      <span>Good design</span>
-      means
-      <span>Good business</span>
-    </h2>
+      <h2 className="head-text">
+        I know that<span> Good Development </span>
+        Means <span> Good Business </span>
+      </h2>
 
-    <div></div>
+      <div className="app__profiles">
+        {abouts.map((about, index) => (
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileInView={{ y: [100, 0], opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+            className="app__profile-item"
+            key={about.title + index}
+          >
+            <img src={about.imgUrl} alt={about.title} />
+            <h2 className="bold-text" style={{ marginTop: 20 }}>
+              {about.title}
+            </h2>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {about.description}
+            </p>
+          </motion.div>
+        ))}
+      </div>
     </>
-  )
+  );
 }
 
 export default About

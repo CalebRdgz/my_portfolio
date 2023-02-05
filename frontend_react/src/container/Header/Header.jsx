@@ -1,8 +1,9 @@
 import React from 'react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
-import {images} from '../../constants';
+import { images } from '../../constants';
 import "./Header.scss";
+import "./waving.scss";
 
 const scaleVariants = {
   whileInView: {
@@ -17,7 +18,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id='home' className="app__header app__flex">
+    <div id="home" className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
@@ -25,7 +26,7 @@ const Header = () => {
       >
         <div className="app__header-badge">
           <div className="badge-cmp app__flex">
-            <span>👋</span>
+            <span class="wave">👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hey! I'm</p>
               <h1 className="head-text">Caleb</h1>
@@ -58,14 +59,16 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.python, images.javascript, images.react, images.django].map((circle, index) => (
-          <div className='circle-cmp app__flex' key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
+        {[images.python, images.javascript, images.react, images.django].map(
+          (circle, index) => (
+            <div className="circle-cmp app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div>
+          )
+        )}
       </motion.div>
     </div>
   );
 }
 
-export default Header
+export default Header;
