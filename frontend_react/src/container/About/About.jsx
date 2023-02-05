@@ -19,10 +19,7 @@ useEffect(() => {
 
   return (
     <>
-      <h2 className="head-text">
-        I Have a Passion for <span> Growing </span>
-        and <span> Creating </span>
-      </h2>
+      <h2 className="head-text">I Have a Passion for <span> Growing </span>and<span> Creating </span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
