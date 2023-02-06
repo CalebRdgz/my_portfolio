@@ -19,7 +19,9 @@ useEffect(() => {
 
   return (
     <>
-      <h2 className="head-text">I Have a Passion for <span> Growing </span>and<span> Creating </span></h2>
+      <h2 className="head-text">
+        I Have a Passion for <span> Growing </span>and<span> Creating </span>
+      </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -34,9 +36,11 @@ useEffect(() => {
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
+            <div className='about-text'>
+              <p className="p-text" style={{ marginTop: 10 }}>
+                {about.description}
+              </p>
+            </div>
           </motion.div>
         ))}
       </div>

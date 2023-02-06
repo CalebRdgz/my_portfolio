@@ -39,6 +39,19 @@ const Header = () => {
             <p className="p-text">Full Stack Developer</p>
             <p className="p-text">Problem Solver</p>
           </div>
+
+          <div className="tag-cmp app__flex">
+            <div className="my-info">
+              <p className="p-text">
+                Thanks for stopping by! I am an Alumni of the Hack Reactor 19 week full stack 
+                software engineering immersive boot camp where I developed multiple full
+                stack applications and became the software engineer I am today. 
+                I continue to work on personal projects to practice and hone my skills 
+                as a full stack web developer.
+              </p>
+            </div>
+          </div>
+
         </div>
       </motion.div>
 

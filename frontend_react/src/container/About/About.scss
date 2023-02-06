@@ -16,7 +16,6 @@
     width: 190px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
     margin: 2rem;
 
@@ -35,4 +34,8 @@
             }
         }
     }
+}
+
+.about-text {
+  text-align: center;
 }

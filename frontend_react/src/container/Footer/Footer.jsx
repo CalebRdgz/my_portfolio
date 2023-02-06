@@ -17,18 +17,9 @@ const Footer = () => {
             calebrodgz@gmail.com
           </a>
         </div>
-
-        <div className="app__footer-card">
-          <img src={images.mobile} alt="mobile" />
-          <a href="tel: +1 (469) 493-6698" className="p-text">
-            +1 (469) 493-6698
-          </a>
-        </div>
       </div>
-
-        <div>
-          <h3 className="head-text">Thank you for getting in touch!</h3>
-        </div>
+      
+      <h2 className="head-text meow">Thank you for getting in touch!</h2>
     </>
   );
 };
