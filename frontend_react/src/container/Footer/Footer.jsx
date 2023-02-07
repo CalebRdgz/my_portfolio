@@ -8,7 +8,9 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Contact me</h2>
+      <h2 className="head-text contact-me">
+        <span>Contact</span> me
+      </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -18,8 +20,10 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      
-      <h2 className="head-text meow">Thank you for getting in touch!</h2>
+
+      <h2 className="head-text contact-me">
+        Thanks for getting in <span>touch</span>!
+      </h2>
     </>
   );
 };

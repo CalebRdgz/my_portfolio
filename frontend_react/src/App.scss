@@ -38,7 +38,6 @@
 
 .copyright {
   width: 100%;
-  padding: 2rem 0 0;
 
   display: flex;
   flex-direction: column;
@@ -57,6 +56,15 @@
   text-align: center;
   color: var(--black-color);
   text-transform: capitalize;
+  margin: 5rem 0 2rem;
+
+  &.caleb {
+    margin: 0;
+  }
+
+  &.work {
+    margin: 1rem 0 64px;
+  }
 
   span {
     color: var(--secondary-color);
@@ -71,9 +79,6 @@
   }
 }
 
-.meow {
-  margin-top: 5rem;
-}
 
 .p-text {
   font-size: 0.8rem;
@@ -183,9 +188,5 @@
   .app__navigation,
   .app__social {
     display: none;
-  }
-
-  .copyright {
-    padding: 2rem;
   }
 }
